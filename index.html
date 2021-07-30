@@ -9,9 +9,18 @@
 
     <link rel="stylesheet" href="../cs1_dev_portfolio/assets/styles/styles.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="https://img.icons8.com/material-rounded/60/000000/super-mario.png">
   <title>Activity: Developer Portfolio</title>
 </head>
   <body>
+
+    
+    <lottie-player class="w-100" src="https://assets5.lottiefiles.com/packages/lf20_pviljovg.json"  background="black"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player>
+
 
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
@@ -38,43 +47,79 @@
     </nav>
 
     <div class="jumbotron">
-     <div class="container text-center">
-       <h1 class="display-4">Hi! Im Nick.</h1>
-       <img width="200" class="rounded-circle" src="../cs1_dev_portfolio/assets/images/Capture.PNG" alt="Image Unavailable">
-       <p class="d-flex content-justify-start p-5">Hi! Im currenty studying Software Engineering @ ZUIIT. I have a small background in programming during college days but it wasn't that much so I want to enhance my skills and learn new things about web development, IT and programming. I considered myself as a beginner and a hardworker. Thank you!
+     <div class="container-center-fluid">
+       <p class="p-5">Hi! Im currenty studying Software Engineering at <a href="https://zuitt.co/">ZUITT</a>. I have a small background in programming during college days but it wasn't that much so I want to enhance my skills and learn new things about web development, IT and programming. I considered myself as a beginner and a hardworker. Thank you!
        </p>
+       <div class="image">
+        <img width="200" class="rounded-circle" src="../cs1_dev_portfolio/assets/images/Capture.PNG" alt="Image Unavailable">
+      </div>
      </div>
     </div>
 
      <!-- tools section -->
         <div class="container-center-fluid">
-          <h2 class="text-center">Tools</h2>
-          <div class="d-flex flex-wrap justify-content-between p-3 border bg-success">
+          <h2 class="text-center p-3">Tools</h2>
+          <div class="d-flex flex-wrap justify-content-around p-3 mb-5 border bg-success">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-bootstrap.png" alt="Image Unavailable">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-css3.png" alt="Image Unavailable">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-expressjs.png" alt="Image Unavailable">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-git.png" alt="Image Unavailable">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-gitlab-ci-cd.png" alt="Image Unavailable">
-            <img width="80" src="../cs1_dev_portfolio/assets/images/logo-heroku.png" alt="Image Unavailable">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-html5.png" alt="Image Unavailable">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-javascript.png" alt="Image Unavailable">
-            <img width="80" src="../cs1_dev_portfolio/assets/images/logo-mongodb.png" alt="Image Unavailable">
-            <img width="80" src="../cs1_dev_portfolio/assets/images/logo-nodejs.png" alt="Image Unavailable">
             <img width="80" src="../cs1_dev_portfolio/assets/images/logo-postman.png" alt="Image Unavailable">
-            <img width="80" src="../cs1_dev_portfolio/assets/images/logo-react.png" alt="Image Unavailable">
-            <img width="80" src="../cs1_dev_portfolio/assets/images/logo-rest.png" alt="Image Unavailable">
-            <img width="80" src="../cs1_dev_portfolio/assets/images/logo-sublime-text-3.png" alt="Image Unavailable"></div>
+            <img width="80" src="../cs1_dev_portfolio/assets/images/logo-sublime-text-3.png" alt="Image Unavailable">
+            <img width="80" src="../cs1_dev_portfolio/assets/images/autocad.png" alt="Image Unavailable">
+          </div>
         </div>
 
-
+        <!-- Resume Section -->
         <div class="card">
           <div class="card-footer container text-center">
             Featured
           </div>
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <h5 class="card-title container text-center">My Background</h5>
+            <p class="card-text"></p>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           </div>
+        </div>
+
+         <!-- contact section form -->
+        <div>
+          <div class="p-4">
+              <h3 class="text-center">Contact</h3>
+              <form>
+                  <div class="form-group">
+                      <label for="">Full Name:</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Insert Full Name Here:">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" placeholder="Insert Email Here:">
+                  </div>
+                  <div class="form-group">
+                      <label for="number">Number:</label>
+                      <input type="Number" class="form-control" placeholder="Insert Number Here:">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea cols="20" rows="10" class="form-control"></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-success btn-center">Send</button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+        <!-- footer section -->
+        <div class="footer">
+          <footer>
+            <div class="text-center">@Nicolle Barrion | All Rights Reserved</div>
+          </footer>
         </div>
 
 
@@ -89,6 +134,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP.JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <!-- lottiefiles -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
   </body>
 </html>

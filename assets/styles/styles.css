@@ -1,5 +1,94 @@
 * {
 	font-family: 'Teko', sans-serif;
-	font-size: 20px;
+	font-weight: 500;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  scroll-behavior: smooth;
 }
 
+/*Navbar*/
+
+/*Top Section*/
+.jumbotron {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+}
+
+.jumbotron img {
+  border-radius: 50px;
+  border: 3px solid white;
+  padding: 0.5rem;
+}
+
+/*Tools*/
+div .bg-success {
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 25px;
+}
+
+div .container-fluid h3 {
+	font-weight: 700;
+
+}
+
+
+/*Background*/
+
+.background-info {
+  padding: 2rem 10% 3rem;
+  list-style-type: none;
+}
+
+.background-info h2, .background-info h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+/*Gallery*/
+#rowgal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}

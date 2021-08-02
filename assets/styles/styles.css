@@ -25,18 +25,12 @@
 }
 
 /*Tools*/
-div .bg-success {
-	padding: 10px;
+div #tools {
+	padding: 30px;
+  margin-top: 50px ;
 	margin-left: 20px;
 	margin-right: 20px;
-	border-radius: 25px;
 }
-
-div .container-fluid h3 {
-	font-weight: 700;
-
-}
-
 
 /*Background*/
 
